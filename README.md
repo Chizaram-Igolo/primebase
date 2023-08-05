@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**ConcreteRose Recruitment Online Interview Assessment**
 
-## Getting Started
+**Candidate:** Chizaram Igolo
 
-First, run the development server:
+**Live URL:** https://primebase-three.vercel.app/ (or https://primebase-chizaram-igolo.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+_Submitted 42 hours after **API documentation issue** was rectified._
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Task:** Design a simple and classic webpage or web pages with ReactJs programming language to perform each function on the API.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## About Project
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This application was built using NextJS, a framework that utilizes React (and also provides a better project bootstrapper than `create-react-app` with better dependency management for server/non-browser-based libraries). NextJS provides server-side functionalities such as Server Side Rendering (SSR) and Static Side Generation (SSG). SSR produces fresh dynamic content on the server side making your web page content more dynamic while SSG builds all the HTML on the server side for faster rendering on the client side with the additional benefit of better SEO for the webpage. NextJS also provides server components that let you carry out server-side functions like data fetching from an API.
 
-## Learn More
+## To run
 
-To learn more about Next.js, take a look at the following resources:
+- Clone with `git clone https://github.com/Chizaram-Igolo/primebase.git`
+- `cd` into folder
+- Install all dependencies with `npm install`
+- Start the application with `npm run dev` and
+- Open `localhost:3000` in your browser to view.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Product Specification
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+A Single Page Application that:
 
-## Deploy on Vercel
+- Requests for a loan (`request_for_loan`)
+- Gets the list of all loan requests (`get_all_loan_request`)
+- Fetches the repayment breakdown for each loan request (`get_repayment_schedule`)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+from `https://okigwecreations.online/api/`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## User Stories
+
+As derived from the requirements given in the assessment.
+
+- As a user, I want my view all the loan requests that have been made so that I can browse through them.
+- As a user, I want to click on a loan request entry so that I can get the repayment breakdown for it.
+- As a user, I want to make a loan request through a form so that I can add a new loan entry.
+
+## Features
+
+- Searchability of data
+- Pagination
+- Sorting
+- Show/Hide Entries
+- Toast notification on Form Submission
+
+## Screenshots
+
+### All Loan Requests
+
+![prime base](./public/01.png)
+
+### Repayment Breakdown
+
+![prime base](./public/02.png)
+
+### Request for Loan
+
+![prime base](./public/03.png)
+
+### Request for Loan (After Submission)
+
+![prime base](./public/04.png)
+
+## Skills I demonstrated
+
+- Frontend Development using ReactJS and Postman (as well as modern UI libraries)
+- API consumption
+- State management using React hooks
+- Static type-checking with TypeScript
+- Pagination, sorting, and filtering of a fairly large dataset
+
+## UI Libraries
+
+- Tailwind CSS (For styling)
+- Shadcn/ui (For table and form)
+- Radix UI (For toast notification)
